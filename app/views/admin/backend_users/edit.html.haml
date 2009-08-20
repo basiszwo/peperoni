@@ -1,0 +1,12 @@
+%h1 Editing BackendUser
+
+%p
+  = link_to 'Show', admin_backend_user_path(@backend_user)
+  = link_to 'Back', admin_backend_users_path
+
+- form_for @backend_user, :url => admin_backend_user_path(@backend_user) do |form|
+  = render :partial => 'form', :locals => {:form => form}
+  
+  %p.button
+    = form.submit 'Update'
+

@@ -1,0 +1,37 @@
+#errorExplanation {
+  background: #ffeeee;
+  border: 1px solid #aa0000;
+  margin-bottom: 15px; }
+  #errorExplanation h2 {
+    text-shadow: #fff 0px 1px 1px;
+    padding: 5px 10px;
+    margin: 0;
+    color: #cc0000;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold; }
+  #errorExplanation p {
+    color: #cc0000;
+    padding: 0 10px .8em 10px; }
+  #errorExplanation ul {
+    padding: 0 10px 5px 10px;
+    margin: 0 10px 0 0; }
+    #errorExplanation ul li {
+      background: transparent url("/images/li_error.gif") 0 85% no-repeat;
+      padding: 0 0 0 1.5em;
+      color: #cc0000;
+      margin: 0 0 2px 0; }
+
+#container #content {
+  background: #eee;
+  margin-top: 15px;
+  padding-top: 15px; }
+  #container #content #logo {
+    text-align: center; }
+  #container #content br {
+    clear: both; }
+  #container #content #login_form {
+    margin-top: 5px; }
+    #container #content #login_form #helper_links {
+      margin: 15px 0 0 0;
+      text-align: center; }

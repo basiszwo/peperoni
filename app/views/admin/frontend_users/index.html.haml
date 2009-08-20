@@ -1,0 +1,27 @@
+%h1 
+  = "Listing FrontendUsers (#{@frontend_users.length})"
+
+%p
+  = link_to 'New FrontendUser', new_admin_frontend_user_path
+
+.table-listing
+  %table
+    %thead
+      %tr
+        %th Email
+        %th Name
+        %th Last login
+        %th Status
+        %th &nbsp;
+
+      - for user in @frontend_users
+        %tr{ :class => cycle('odd', 'even') }
+          %td= h user.email
+          %td= h user.username
+          %td= h user.last_login_at
+          %td= h user.status
+      
+          %td
+            = link_to 'Edit', edit_admin_frontend_user_path(user), :id => "edit_frontend_user_#{user.id}"
+            %br
+            = link_to 'Destroy', admin_frontend_user_path(user), :confirm => 'Are you sure?', :method => :delete, :id => "destroy_frontend_user_#{user.id}"

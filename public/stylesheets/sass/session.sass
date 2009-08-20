@@ -1,0 +1,32 @@
+@import colors
+@import error_messages
+
+#container
+  / +container
+
+  #content
+    / +column(12, true)
+    / +push-margins(6)
+    :background #eee
+    :margin 
+      :top 15px
+    :padding
+      :top 15px
+    
+    #logo
+      / +column(8, true)
+      / +push-margins(2)
+      :text-align center
+      
+    br
+      :clear both
+    
+    #login_form
+      / +column(8, true)
+      / +push-margins(2)
+      margin-top: 5px
+        
+      #helper_links
+        margin: 15px 0 0 0
+        text-align: center
+        

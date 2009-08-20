@@ -1,0 +1,13 @@
+%h1 Resend new activation email
+
+- form_for :user, :url => activations_path do |f|
+  = f.error_messages
+  = f.label :email
+  %br/
+  = f.text_field :email
+  %br/
+  %br/
+  = f.submit "Give me a new activation email"
+  %br/
+  %br/
+  = link_to 'Send me back to login screen', login_path

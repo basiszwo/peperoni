@@ -1,0 +1,154 @@
+#errorExplanation {
+  background: #ffeeee;
+  border: 1px solid #aa0000;
+  margin-bottom: 15px; }
+  #errorExplanation h2 {
+    text-shadow: #fff 0px 1px 1px;
+    padding: 5px 10px;
+    margin: 0;
+    color: #cc0000;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold; }
+  #errorExplanation p {
+    color: #cc0000;
+    padding: 0 10px .8em 10px; }
+  #errorExplanation ul {
+    padding: 0 10px 5px 10px;
+    margin: 0 10px 0 0; }
+    #errorExplanation ul li {
+      background: transparent url("/images/li_error.gif") 0 85% no-repeat;
+      padding: 0 0 0 1.5em;
+      color: #cc0000;
+      margin: 0 0 2px 0; }
+
+body {
+  background-color: #eee;
+  line-height: 1.5;
+  color: #363b3d;
+  padding: 5px 0 0 0;
+  margin: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small; }
+  body h1 {
+    font-size: 2em; }
+  body h2 {
+    font-size: 1.8em; }
+  body #container a {
+    color: #50baff; }
+    body #container a:hover {
+      color: #2e98dd; }
+  body #container .clear {
+    clear: both;
+    font-size: 1px; }
+  body #container #header #login_box {
+    text-align: right;
+    margin: 0 0 10px 0;
+    color: #aaaaaa;
+    font-size: .9em; }
+    body #container #header #login_box a {
+      color: #aaaaaa; }
+      body #container #header #login_box a:hover {
+        color: #888888; }
+  body #container #content_outer {
+    background-color: #fff; }
+    body #container #content_outer #content {
+      margin: 10px;
+      min-height: 450px; }
+      body #container #content_outer #content .form ul li {
+        margin-bottom: 5px;
+        border-bottom: 1px solid #eee; }
+        body #container #content_outer #content .form ul li:after {
+          content: ".";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden; }
+        body #container #content_outer #content .form ul li.last {
+          border: none; }
+        body #container #content_outer #content .form ul li .description {
+          margin-left: 140px;
+          font-size: .8em; }
+        body #container #content_outer #content .form ul li label {
+          display: block;
+          width: 125px;
+          text-align: right;
+          float: left;
+          margin: .5em 15px .5em 0; }
+        body #container #content_outer #content .form ul li fieldset {
+          padding: 1.4em;
+          margin: 0 0 1.5em 0;
+          border: 1px solid #ccc; }
+        body #container #content_outer #content .form ul li legend {
+          font-weight: bold;
+          font-size: 1.2em; }
+        body #container #content_outer #content .form ul li input.text {
+          margin: 0.5em 0;
+          border: 1px solid #bbb;
+          width: 400px;
+          padding: 5px;
+          font-size: 1em; }
+          body #container #content_outer #content .form ul li input.text:focus {
+            border: 1px solid #fca;
+            background-color: #ffc; }
+        body #container #content_outer #content .form ul li input.title {
+          font-size: 1.5em; }
+        body #container #content_outer #content .form ul li input.title {
+          margin: 0.5em 0;
+          border: 1px solid #bbb;
+          width: 400px;
+          padding: 5px; }
+          body #container #content_outer #content .form ul li input.title:focus {
+            border: 1px solid #fca;
+            background-color: #ffc; }
+        body #container #content_outer #content .form ul li textarea {
+          margin: 0.5em 0;
+          border: 1px solid #bbb;
+          width: 400px; }
+          body #container #content_outer #content .form ul li textarea:focus {
+            border: 1px solid #666; }
+        body #container #content_outer #content .form ul li select {
+          margin: 0.5em 0;
+          border: 1px solid #bbb;
+          padding: 3px; }
+          body #container #content_outer #content .form ul li select:focus {
+            border: 1px solid #fca;
+            background-color: #ffc; }
+        body #container #content_outer #content .form ul li textarea {
+          width: 390px;
+          height: 250px;
+          padding: 5px; }
+          body #container #content_outer #content .form ul li textarea:focus {
+            border: 1px solid #fca;
+            background-color: #ffc; }
+        body #container #content_outer #content .form ul li .checkbox_listing {
+          margin: 5px 0 0 140px; }
+          body #container #content_outer #content .form ul li .checkbox_listing input {
+            float: left; }
+          body #container #content_outer #content .form ul li .checkbox_listing label {
+            display: block;
+            width: 150px;
+            margin: 0 0 0 30px;
+            float: none;
+            text-align: left; }
+      body #container #content_outer #content .form ul li .fieldWithErrors input, body #container #content_outer #content .form ul li .fieldWithErrors select, body #container #content_outer #content .form ul li .fieldWithErrors textarea {
+        border-color: #aa0000;
+        background-color: #ffcccc; }
+      body #container #content_outer #content p.button {
+        background: #EEEEEE none repeat scroll 0 0;
+        margin: 0.5em 0 0;
+        padding: 1em 0.5em 1em 160px; }
+  body #container #footer {
+    height: 30px;
+    padding: 5px 5px;
+    text-align: right;
+    font-size: .9em;
+    color: #aaaaaa; }
+    body #container #footer a {
+      color: #aaaaaa; }
+      body #container #footer a:hover {
+        color: #888888; }

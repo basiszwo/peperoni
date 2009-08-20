@@ -1,0 +1,10 @@
+#login_box
+  - if !current_user
+    = link_to "Register", new_account_path
+    \|
+    = link_to "Log In", new_user_session_path
+  - else
+    You are
+    = link_to @current_user.email, admin_backend_user_path(@current_user)
+    \|
+    = link_to "Logout", user_session_path, :method => :delete, :confirm => "Are you sure you want to logout?"

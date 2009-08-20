@@ -1,0 +1,25 @@
+%h1 BackendUser
+
+%p
+  = link_to 'Edit', edit_admin_backend_user_path
+
+%dl
+  %dt Username
+  %dd= h @backend_user.username
+  %dt Email
+  %dd= h @backend_user.email
+  %dt Login count
+  %dd= h @backend_user.login_count
+  
+  %dt Last request at
+  %dd= h @backend_user.last_request_at
+  
+  %dt Last login at
+  %dd= h @backend_user.last_login_at
+  
+  %dt Current login at
+  %dd= h @backend_user.current_login_at
+  
+  %dt Last login ip
+  %dd= h @backend_user.last_login_ip
+  

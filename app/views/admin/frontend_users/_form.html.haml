@@ -1,0 +1,23 @@
+= form.error_messages
+
+.form
+  %ul
+    %li
+      = form.label :username
+      = form.text_field :username, :class => 'text'
+    %li
+      = form.label :email
+      = form.text_field :email, :class => 'text'
+    %li
+      = form.label :password
+      = form.password_field :password, :class => 'text'
+    %li
+      = form.label :password_confirmation
+      = form.password_field :password_confirmation, :class => 'text'
+    %li
+      = form.label :role_ids, 'Rollen'
+      - Role.frontend.each do |r|
+        .checkbox_listing
+          = check_box_tag "frontend_user[role_ids][]", r.id, @frontend_user.roles.include?(r), {:id => "frontend_user_role_ids_#{r.id}"}
+          = label_tag "frontend_user_role_ids_#{r.id}", r.name
+    

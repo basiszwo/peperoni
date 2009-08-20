@@ -1,0 +1,15 @@
+log/*.log
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+coverage
+features_rcov
+features.*
+db/*.sqlite3
+config/database.yml
+.project
+public/assets
+public/test
+public/cache
+.sass-cache

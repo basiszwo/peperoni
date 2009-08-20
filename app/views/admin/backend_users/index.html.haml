@@ -1,0 +1,26 @@
+%h1 
+  = "Listing BackendUsers (#{@backend_users.length})"
+
+%p
+  = link_to 'New BackendUser', new_admin_backend_user_path
+
+.table-listing
+  %table
+    %thead
+      %tr
+        %th Email
+        %th Name
+        %th Last login
+        %th Status
+        %th &nbsp;
+
+    - for user in @backend_users
+      %tr{ :class => cycle('odd', 'even') }
+        %td= h user.email
+        %td= h user.username
+        %td= h user.last_login_at
+        %td= h user.status
+      
+        %td
+          = link_to 'Edit', edit_admin_backend_user_path(user)
+          = link_to 'Destroy', admin_backend_user_path(user), :confirm => 'Are you sure?', :method => :delete, :id => "destroy_#{user.id}"

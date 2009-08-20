@@ -1,0 +1,19 @@
+=table-listing
+  table
+    +alternating-rows-and-columns(!even_row_color, !odd_row_color, !dark_intersection, !table_header_color, !table_footer_color)
+    th
+      :font-size .8em
+      :border
+        :bottom= 3px solid !table_border_color
+    
+    tr.even, tr.odd
+      &:hover
+        :background-color #ffc
+        
+        td
+          :background-color #ffc
+      
+      td
+        :padding
+          :top 5px
+          :bottom 5px

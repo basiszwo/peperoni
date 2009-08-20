@@ -1,0 +1,19 @@
+!!! Transitional
+%html
+
+  %head
+    %title= "#{controller.controller_name}: #{controller.action_name}"
+    = stylesheet_link_tag 'session', :media => 'screen, projection'
+    /[if IE]
+      = stylesheet_link_tag 'ie', :media => 'screen, projection'
+
+  %body
+    #container
+      #content
+        %br.clearfix
+      
+        #flash_messages
+          - flash.each do |key, value|
+            %div{:class => key}= h(value)
+
+        = yield

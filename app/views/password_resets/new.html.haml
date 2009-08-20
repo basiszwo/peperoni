@@ -1,0 +1,13 @@
+%h1 Forgot your password? Get a new one.
+
+- form_for :user, :url => password_resets_path do |f|
+  = f.error_messages
+  = f.label :email
+  %br/
+  = f.text_field :email
+  %br/
+  = f.submit "Reset password"
+  %br/
+  %br/
+  = link_to 'Send me back to login screen', login_path
+

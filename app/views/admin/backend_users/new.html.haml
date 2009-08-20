@@ -1,0 +1,9 @@
+%h1 Register new BackendUser
+
+- form_for @backend_user, :url => admin_backend_users_path do |form|
+  = render :partial => 'form', :locals => {:form => form}
+  
+  %p.button
+    = form.submit "Create"
+    or
+    = link_to "Back", admin_backend_users_path

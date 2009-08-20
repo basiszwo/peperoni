@@ -1,0 +1,197 @@
+@import colors
+@import error_messages.sass
+@import tables.sass
+
+
+=self-clearing
+  &:after
+    :content "."
+    :display block
+    :height 0
+    :clear both
+    :visibility hidden
+
+=app-form
+  ul
+    / +no-bullets
+    
+    li
+      +self-clearing
+      :margin
+        :bottom 5px
+      :border
+        :bottom 1px solid #eee
+      &.last
+        :border none
+      
+      .description
+        :margin
+          :left 140px
+        :font-size .8em
+        
+        
+      label
+        :display block
+        :width 125px
+        :text-align right
+        :float left
+        :margin .5em 15px .5em 0
+        
+      fieldset
+        :padding 1.4em
+        :margin 0 0 1.5em 0
+        :border 1px solid #ccc
+      
+      legend
+        :font-weight bold
+        :font-size 1.2em
+      
+      input
+        &.text
+          :margin 0.5em 0
+          :border 1px solid #bbb
+          :width 400px
+          :padding 5px
+          :font-size 1em
+          &:focus
+            :border 1px solid #fca
+            :background-color #ffc
+        &.title
+          :font-size 1.5em
+      
+      input.title
+        :margin 0.5em 0
+        :border 1px solid #bbb
+        :width 400px
+        :padding 5px
+        &:focus
+          :border 1px solid #fca
+          :background-color #ffc
+          
+      textarea
+        :margin 0.5em 0
+        :border 1px solid #bbb
+        :width 400px
+        &:focus
+          :border 1px solid #666
+      
+      select
+        :margin 0.5em 0
+        :border 1px solid #bbb
+        :padding 3px
+        &:focus
+          :border 1px solid #fca
+          :background-color #ffc
+      
+      textarea
+        :width 390px
+        :height 250px
+        :padding 5px
+        &:focus
+          :border 1px solid #fca
+          :background-color #ffc
+
+      .checkbox_listing
+        :margin 5px 0 0 140px
+        
+        input
+          :float left
+          
+        label
+          :display block
+          :width 150px
+          :margin 0 0 0 30px
+          :float none
+          :text-align left
+
+
+// Remove the scaffolding when you're ready to start doing visual design.
+// Or leave it in if you're happy with how blueprint looks out-of-the-box
+//+blueprint-scaffolding
+
+body
+  :background
+    :color #eee
+  :line-height 1.5
+  :color = !font_color
+  :padding 5px 0 0 0
+  :margin 0
+  :font-family "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Helvetica, Verdana, Arial, sans-serif
+  :line-height 1.5em
+  :font-size x-small
+  :voice-family "\"}\""
+  :voice-family inherit
+  :font-size small
+
+  h1
+    :font-size 2em
+  
+  h2
+    :font-size 1.8em
+
+  #container    
+    a
+      :color = !link_color
+      
+      &:hover
+        :color = !link_hover_color
+        
+    .clear
+      :clear both
+      :font-size 1px
+    
+    #header
+      #logo
+        / +column(4)
+        / +append(8)
+      
+      #login_box
+        / +column(12)
+        :text-align right
+        :margin 0 0 10px 0
+        :color = !quiet_color
+        :font-size .9em
+        
+        a
+          :color = !quiet_color
+          
+          &:hover
+            :color = !louder_color
+
+    #content_outer
+      /+column(24, true)
+      :background
+        :color #fff
+      
+      #content
+        :margin 10px
+        :min-height 450px
+        
+        .form
+          +app-form
+          
+          ul
+            li
+              +field-with-errors
+          
+        p.button
+          :background #EEEEEE none repeat scroll 0 0
+          :margin 0.5em 0 0
+          :padding 1em 0.5em 1em 160px
+    
+    #footer
+      /+column(24)
+      :height 30px
+      :padding 5px 5px
+      :text-align right
+      :font-size .9em
+      :color = !footer_color
+      
+      a
+        :color = !link_quiet_color
+        &:hover
+          :color = !link_quiet_hover_color
+
+      ul
+        /+horizontal-list(5px)
+      

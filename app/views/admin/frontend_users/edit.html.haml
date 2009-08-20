@@ -1,0 +1,12 @@
+%h1 Editing FrontendUser
+
+%p
+  = link_to 'Show', admin_frontend_user_path(@frontend_user)
+  = link_to 'Back', admin_frontend_users_path
+
+- form_for @frontend_user, :url => admin_frontend_user_path(@frontend_user) do |form|
+  = render :partial => 'form', :locals => {:form => form}
+  
+  %p.button
+    = form.submit 'Update'
+
