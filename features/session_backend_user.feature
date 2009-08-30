@@ -15,7 +15,7 @@ Feature: login for backend user
     And I fill in "Password" with "wrongsecret"
     And I press "Login"
     Then I should see error messages
-    And I am on the login page
+    And I should be on the login page
     
   
   Scenario: Backend User with valid credentials
@@ -30,4 +30,4 @@ Feature: login for backend user
     And I fill in "Password" with "secret"
     And I press "Login"
     Then I should see "Login successful"
-    And I am on the admin root page
+    And I should be on the admin root page

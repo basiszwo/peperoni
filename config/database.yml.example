@@ -13,7 +13,7 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   adapter: mysql
-  database: floorwear_proto_development
+  database: peperoni_development
   username: root
   password: 
   host: localhost
@@ -23,14 +23,14 @@ development:
 # Do not set this db to the roote as development or production.
 test:
   adapter: mysql
-  database: floorwear_proto_test
+  database: peperoni_test
   username: root
   password: 
   host: localhost
 
 production:
   adapter: mysql
-  database: floorwear_proto_production
+  database: peperoni_production
   username: root
   password: 
   host: localhost
