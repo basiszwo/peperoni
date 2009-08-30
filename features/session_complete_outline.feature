@@ -16,7 +16,7 @@ Feature: login for backend and frontend user
     And I fill in "Password" with "<login_password>"
     And I press "Login"
     Then I should <action>
-    And I am on the <page> page
+    And I should be on the <page> page
 
   Examples:
    | role          | email                | password | login_password | username | action                 | page       |

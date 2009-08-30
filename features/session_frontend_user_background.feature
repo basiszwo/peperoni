@@ -17,11 +17,11 @@ Feature: login for frontend user
     And I fill in "Password" with "badsecret"
     And I press "Login"
     Then I should see error messages
-    And I am on the login page
+    And I should be on the login page
     
   Scenario: Frontend User with valid credentials
     When I fill in "Email" with "customer@example.com"
     And I fill in "Password" with "secret"
     And I press "Login"
     Then I should see "Login successful"
-    And I am on the account page
+    And I should be on the account page
