@@ -1,7 +1,7 @@
 @slow
 Feature: login for backend and frontend user
   In order to use peperoni
-  as a backend or frontend user
+  as a backend or frontend user (admin / customer)
   I should be able to log in
 
   Scenario Outline:

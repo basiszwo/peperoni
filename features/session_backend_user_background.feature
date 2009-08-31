@@ -1,6 +1,6 @@
 Feature: login for backend user
   In order to use peperoni
-  as a backend user
+  as a backend user / admin
   I should be able to log in
   
   Background:

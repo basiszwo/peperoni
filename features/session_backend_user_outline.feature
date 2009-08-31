@@ -1,11 +1,11 @@
 Feature: login for backend user
   In order to use peperoni
-  as a backend user / customer
+  as a backend user / admin
   I should be able to log in
       
   Scenario Outline:
     Given the following role records
-      | name          |
+      | name         |
       | backend_user |
     And the following backend_user records
       | username   | email   | password   |
@@ -21,3 +21,4 @@ Feature: login for backend user
     | email             | password | login_password | username | action                 | page       |
     | admin@example.com | secret   | badsecret      | admin    | see error messages     | new login  |
     | admin@example.com | secret   | secret         | admin    | see "Login successful" | admin root |
+    
