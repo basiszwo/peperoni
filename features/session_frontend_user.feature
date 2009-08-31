@@ -15,7 +15,7 @@ Feature: login for frontend user
     And I fill in "Password" with "wrongsecret"
     And I press "Login"
     Then I should see error messages
-    And I should be on the login page
+    And I should be on the new login page
     
   
   Scenario: Frontend User with valid credentials

@@ -20,7 +20,7 @@ Feature: login for backend and frontend user
 
   Examples:
    | role          | email                | password | login_password | username | action                 | page       |
-   | frontend_user | customer@example.com | secret   | badsecret      | customer | see error messages     | login      |
+   | frontend_user | customer@example.com | secret   | badsecret      | customer | see error messages     | new login  |
    | frontend_user | customer@example.com | secret   | secret         | customer | see "Login successful" | account    |
-   | backend_user  | admin@example.com    | secret   | badsecret      | admin    | see error messages     | login      |
+   | backend_user  | admin@example.com    | secret   | badsecret      | admin    | see error messages     | new login  |
    | backend_user  | admin@example.com    | secret   | secret         | admin    | see "Login successful" | admin root |

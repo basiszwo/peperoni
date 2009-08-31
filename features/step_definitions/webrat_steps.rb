@@ -115,5 +115,5 @@ Then /^the "([^\"]*)" checkbox should be checked$/ do |label|
 end
 
 Then /^I should be on (.+)$/ do |page_name|
-  assert path_to(page_name), URI.parse(current_url).path
+  assert_equal path_to(page_name), URI.parse(current_url).path
 end

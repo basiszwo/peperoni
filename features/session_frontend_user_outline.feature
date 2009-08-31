@@ -18,6 +18,6 @@ Feature: login for frontend user
     And I should be on the <page> page
 
   Examples:
-    | email                | password | login_password | username | action                 | page    |
-    | customer@example.com | secret   | badsecret      | customer | see error messages     | login   |
-    | customer@example.com | secret   | secret         | customer | see "Login successful" | account |
+    | email                | password | login_password | username | action                 | page      |
+    | customer@example.com | secret   | badsecret      | customer | see error messages     | new login |
+    | customer@example.com | secret   | secret         | customer | see "Login successful" | account   |

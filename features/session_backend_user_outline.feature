@@ -19,5 +19,5 @@ Feature: login for backend user
 
   Examples:
     | email             | password | login_password | username | action                 | page       |
-    | admin@example.com | secret   | badsecret      | admin    | see error messages     | login      |
+    | admin@example.com | secret   | badsecret      | admin    | see error messages     | new login  |
     | admin@example.com | secret   | secret         | admin    | see "Login successful" | admin root |

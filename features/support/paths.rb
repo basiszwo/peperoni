@@ -22,6 +22,8 @@ module NavigationHelpers
       new_activation_path
     when /the login page/
       login_path
+    when /the new login page/
+      user_session_path
     when /the admin root page/ 
       admin_path
     when /the dashboard page/
